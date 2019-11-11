@@ -1,0 +1,105 @@
+\documentclass[aps,pra,notitlepage,amsmath,amssymb,letterpaper,12pt]{revtex4-1}
+\usepackage{amsthm,enumerate}
+\usepackage{graphicx}
+%  Above uses the Americal Physical Society template for Physical Review A
+%  as a reasonable and fully-featured default template
+
+%  Below define helpful commands to set up problem environments easily
+\newtheorem{theorem}{Theorem}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{solution}{\begin{proof}[Solution]}{\end{proof}}
+
+% --------------------------------------------------------------
+%                   Document Begins Here
+% --------------------------------------------------------------
+
+\begin{document}
+
+\title{Midterm Project 4}
+\author{Madeline Dumontelle, Jacob Lepp, Alejandra Luna, Evan Walker}
+\affiliation{Math 450, Schmid College of Science and Technology, Chapman University}
+\date{\today}
+
+\maketitle
+
+\section{Proofs for Theorems 5.12 and 5.13}
+
+
+\begin{theorem}[Generalized Mean-Value Theorem(5.12)]
+Let $f$ and $g$ be two functions, each having a derivative (finite or infinite) at each point
+of an open interval $(a,b)$ and each continuous at the endpoints $a$ and $b$. Assume also that there
+is no interior point $x$ at which both $f^\prime(x)$ and $g^\prime(x)$ are infinite. Then for some
+interior point $c$ we have
+\[f^\prime(c)[g(b)-g(a)] = g^\prime(c)[f(b)-f(a)]\]
+\end{theorem}
+
+\begin{proof}
+proof here
+\end{proof}
+
+\begin{theorem}[5.12 in our book]
+Let $f$ and $g$ be two functions, each having a derivative (finite or infinite) at each point of $(a,b)$. At the endpoints assume that the limits $f(a+)$,$g(a+)$,$f(b-)$, and $g(b-)$ exist as finite values. Assume further that there is no interior point x at which both $f^\prime(x)$ and $g^\prime(x)$ are infinite. Then for some
+interior point $c$ we have
+\[f^\prime(c)[g(b-)-g(a+)] = g^\prime(c)[f(b-)-f(a+)]\]
+\end{theorem}
+
+\begin{proof}
+proof here
+\end{proof}
+
+\section{Proofs for Theorems 5.11, 5.14, and 5.16 as Examples}
+
+\begin{theorem}[Mean-Value Theorem(5.11)]
+Assume that $f$ has a derivative (finite or infinite) at each point of $(a,b)$, and assume that $f$ is continuous at both endpoints $a$ and $b$. Then $\exists c \in (a,b)$ such that
+\[f(b) - f(a) = f^\prime(c)(b-a)\]
+\end{theorem}
+
+\begin{proof}
+proof here
+\end{proof}
+
+\begin{theorem}[5.14 in our book]
+Assume that $f$ has a derivative (finite or infinite) at each point of an open interval $(a,b)$, and that $f$ is continuous at both endpoints $a$ and $b$.
+\begin{enumerate}[\upshape (a)]
+  \item if $f^\prime$ takes only positive values (finite or infinite) in $(a,b)$, then $f$ is strictly increasing on $[a,b]$.
+  \item if $f^\prime$ takes only negative values (finite or infinite) in $(a,b)$, then $f$ is strictly decreasing on $[a,b]$.
+  \item if $f^\prime$ is zero everywhere in $(a,b)$, then $f$ is constant on $[a,b]$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+proof here
+\end{proof}
+
+\begin{theorem}[Intermediate-value theorem for derivatives(5.16)]
+Assume that $f$ is defined on a compact interval $[a,b]$ and that $f$ has a derivative(finite or infinite) at each interior point. Assume also that $f$ has finite one-sided derivatives $f'_{+}(a)$ and $f'_{-}(b)$ at the endpoints, with $f'_{+}(a)\neq f'_{-}(b)$. Then, if c is a real number between $f'_{+}(a)$ and $f'_{-}(b)$, there exists at least one interior point $x$ such that $f^\prime(x)=c$
+\end{theorem}
+
+\begin{proof}
+proof here
+\end{proof}
+
+
+
+
+
+%\begin{align}
+%$f'(x)$ &= \frac{f(x + h) - f(x)}{h} \\
+%&= -\frac{\hbar^2}{2m}\nabla^2\psi(x,t) + V(x)\psi(x,t). \nonumber
+%\end{align}
+% Use align environments for equations. The \\ is a newline character. The & is the alignment character.
+% Using align* or \nonumber on each line removes equation numbers
+
+%\subsection{Subsection Title Here} % Specify subsections and subsubsections this way
+
+%\begin{figure}[h!] % h forces the figure to be placed here, in the text
+%  \includegraphics[width=0.4\textwidth]{stormtroopocat.jpg}  % if pdflatex is used, jpg, pdf, and png are permitted
+%  \caption{The figure caption goes here.}
+%  \label{fig:figlabel}
+%\end{figure}
+
+%This text should be below the figure unless \LaTeX  decides that a different layout works better.
+
+% Repeat as needed
+\end{document}
